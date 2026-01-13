@@ -1,52 +1,71 @@
-### **பாடத்திட்டம்**
+### **பகுதி 1: அறிமுகம் மற்றும் அமைவு (Introduction & Setup)**
 
-**Module 1: அறிமுகம் மற்றும் அமைவு (Introduction & Setup) - (25 நிமிடங்கள்)**
+#### **Flutter என்றால் என்ன? Dart ஏன்?**
 
-*   **Flutter என்றால் என்ன? Dart ஏன்?** (5 நிமிடங்கள்)
-    *   Cross-platform development-ன் முக்கியத்துவம்.
-    *   Flutter-ன் நன்மைகள் (Single Codebase, Fast Development, Expressive UI).
-*   **Flutter-ஐ கணினியில் நிறுவுதல் (Setup Process)** (20 நிமிடங்கள்)
-    *   தேவையானவை: Flutter SDK, VS Code or Android Studio, Android Emulator/iOS Simulator அல்லது Physical device.
-    *   `flutter doctor` கட்டளையின் முக்கியத்துவம்.
-    *   (இதை நேரலையில் செய்து காட்ட முடியாது என்பதால், படிகள் மற்றும் பொதுவான சிக்கல்களை விளக்குவது நல்லது).
+**Flutter அறிமுகம்:**
 
-**Module 2: Dart மொழியின் அடிப்படைகள் (Dart Language Fundamentals) - (75 நிமிடங்கள்)**
+Flutter என்பது கூகிளால் உருவாக்கப்பட்ட ஒரு திறந்த மூல (open-source) UI மென்பொருள் மேம்பாட்டுக் கருவி (UI software development kit) ஆகும். இதன் முக்கிய நோக்கம், ஒரே ஒரு நிரல் குறியீட்டை (Single Codebase) மட்டும் கொண்டு Android, iOS, Web, Windows, macOS, மற்றும் Linux என அனைத்து முக்கிய தளங்களுக்கும் (platforms) செயலிகளை (applications) உருவாக்குவதுதான்.
 
-*   **Dart Basics (விரைவுப் பார்வை)** (20 நிமிடங்கள்)
-    *   Variables (`var`, `final`, `const`), Data Types (`int`, `double`, `String`, `bool`, `List`, `Map`).
-    *   Functions (அறிமுகம், параметры, return types).
-    *   Control Flow Statements (`if-else`, `for`, `while`).
-*   **Dart-ல் OOP முழுமையாக (Object-Oriented Programming)** (40 நிமிடங்கள்)
-    *   Classes மற்றும் Objects (வகுப்புகள் மற்றும் பொருள்கள்).
-    *   Constructors (பெயர் மற்றும் பெயரிடப்பட்ட constructors).
-    *   Inheritance (`extends`).
-    *   Abstract Classes மற்றும் Mixins (சுருக்கமான வகுப்புகள் மற்றும் மிக்சின்கள் - Dart-ன் சிறப்பு அம்சம்).
-*   **Async நிரலாக்க அறிமுகம் (Intro to Async Programming)** (15 நிமிடங்கள்)
-    *   `Future` என்றால் என்ன?
-    *   `async` மற்றும் `await` keywords-ன் பயன்பாடு (எளிய எடுத்துக்காட்டுடன்).
+**Flutter-ன் முக்கிய நன்மைகள்:**
 
-**Module 3: Flutter உடன் தொடங்குதல் (Getting Started with Flutter) - (70 நிமிடங்கள்)**
+1.  **வேகமான உருவாக்கம் (Fast Development):** "Hot Reload" என்ற வசதி மூலம், நீங்கள் குறியீட்டில் செய்யும் மாற்றங்களை உடனடியாகச் செயலியின் திரையில் பார்க்க முடியும். இது சோதித்துப் பார்ப்பதற்கும் (testing), பிழைகளைக் களைவதற்கும் (debugging) ஆகும் நேரத்தை வெகுவாகக் குறைக்கிறது.
+2.  **அழகான மற்றும் நெகிழ்வான UI (Expressive and Flexible UI):** Flutter, விட்ஜெட்களை (Widgets) அடிப்படையாகக் கொண்டது. இதன் மூலம், உங்கள் செயலியின் ஒவ்வொரு காட்சியையும் (pixel) உங்கள் கட்டுப்பாட்டில் வைத்து, மிக அழகான மற்றும் தனித்துவமான பயனர் இடைமுகங்களை (User Interfaces) உருவாக்க முடியும்.
+3.  **சிறந்த செயல்திறன் (Excellent Performance):** Flutter செயலிகள் நேரடியாக இயந்திரக் குறியீட்டிற்கு (native machine code) தொகுக்கப்படுவதால் (compiled), அவை மிக வேகமாகவும், சீராகவும் இயங்கும்.
 
-*   **Flutter-ன் முக்கிய கருத்து: "எல்லாமே Widgets தான்!"** (10 நிமிடங்கள்)
-    *   Widget மரத்தின் (Widget Tree) ആശയം.
-    *   Stateless vs Stateful Widgets (இது மிக முக்கியம்).
-*   **அடிப்படை மற்றும் லேஅவுட் விட்ஜெட்டுகள் (Basic & Layout Widgets)** (40 நிமிடங்கள்)
-    *   **முக்கியமானவை:** `Scaffold`, `AppBar`, `Container`, `Text`, `Icon`, `Image`.
-    *   **லேஅவுட்:** `Row`, `Column` (mainAxisAlignment, crossAxisAlignment), `Expanded`, `Padding`, `Center`, `ListView`.
-    *   (எல்லா விட்ஜெட்களையும் விளக்க முடியாது. ஆனால் இந்த முக்கியமான விட்ஜெட்களை வைத்து ஒரு எளிய UI-ஐ எப்படி உருவாக்குவது என்று காட்டலாம்).
-*   **பயனர் உள்ளீடு மற்றும் ஊடாடும் விட்ஜெட்டுகள் (User Input & Interactive Widgets)** (20 நிமிடங்கள்)
-    *   `ElevatedButton`, `TextButton`.
-    *   `TextField` (ஒரு எளிய எடுத்துக்காட்டு).
-    *   `setState()`-ன் செயல்பாடு (StatefulWidget-ல் UI-ஐ மாற்றுவது எப்படி).
+**Dart மொழி ஏன் Flutter-க்கு பயன்படுத்தப்படுகிறது?**
 
-**Module 4: முடிவுரை மற்றும் கேள்வி பதில் (Conclusion & Q&A) - (10 நிமிடங்கள்)**
+Dart என்பது கூகிளால் உருவாக்கப்பட்ட, பொருள் சார்ந்த நிரலாக்க மொழி (Object-Oriented Programming language). இது Flutter-க்காகவே சிறப்பாக வடிவமைக்கப்பட்டுள்ளது.
 
-*   அடுத்து என்ன படிக்கலாம் (What to learn next).
-*   சமூக இணைப்புகள் (Community links).
-*   கேள்வி பதில்.
+*   **JIT (Just-In-Time) Compilation:** இது "Hot Reload" போன்ற வேகமான மேம்பாட்டு அம்சங்களைச் சாத்தியமாக்குகிறது.
+*   **AOT (Ahead-Of-Time) Compilation:** செயலி வெளியிடப்படும் போது, Dart குறியீடு நேரடியாக ARM அல்லது x86 இயந்திரக் குறியீட்டிற்குத் தொகுக்கப்படுகிறது. இது செயலியை மிக வேகமாக இயங்க வைக்கிறது.
 
 ---
 
-இந்த அமைப்பு உங்களுக்கு சரியா இருக்கா? இதுல ஏதாவது மாற்றம் செய்யணுமா?
+#### **Flutter-ஐ கணினியில் நிறுவுதல் (Setup Process)**
 
-இது உங்களுக்கு ஓகே என்றால், நாம முதல் பகுதியான **"Module 1: அறிமுகம் மற்றும் அமைவு"**-க்கான குறிப்புகளை உருவாக்க ஆரம்பிக்கலாம். உங்கள் பதிலுக்காக காத்திருக்கிறேன்.
+மாணவர்களுக்கு செயல்முறையை விளக்குவதற்கான குறிப்புகள் இங்கே.
+
+**தேவையான மென்பொருட்கள் (Prerequisites):**
+
+1.  **Flutter SDK (Software Development Kit):** இது Flutter செயலிகளை உருவாக்கத் தேவையான அனைத்து கருவிகளையும், நூலகங்களையும் (libraries) கொண்டது.
+2.  **ஒரு குறியீட்டு எடிட்டர் (Code Editor):**
+    *   **Visual Studio Code (பரிந்துரைக்கப்படுகிறது):** இலகுவானது மற்றும் Flutter மற்றும் Dart-க்கான சிறந்த நீட்டிப்புகளை (extensions) கொண்டது.
+    *   **Android Studio:** இது ஒரு முழுமையான IDE. Android Emulator மற்றும் பிற கருவிகள் இதிலேயே உள்ளன.
+3.  **ஒரு Emulator அல்லது Simulator:**
+    *   **Android Emulator:** Android Studio-ஐ நிறுவும் போது இதை அமைத்துக் கொள்ளலாம்.
+    *   **iOS Simulator:** இது Xcode உடன் வருகிறது (macOS-ல் மட்டும் கிடைக்கும்).
+    *   **உண்மையான சாதனம் (Physical Device):** உங்கள் சொந்த Android அல்லது iOS போனையும் பயன்படுத்தலாம்.
+
+**நிறுவுதலின் முக்கிய படிகள் (Key Installation Steps):**
+
+1.  Flutter-ன் அதிகாரப்பூர்வ இணையதளத்தில் இருந்து உங்கள் இயக்க முறைமைக்கு (Operating System) ஏற்ற Flutter SDK-ஐ பதிவிறக்கம் செய்யவும்.
+2.  பதிவிறக்கம் செய்த ZIP கோப்பை உங்கள் கணினியில் நிரந்தரமான இடத்தில் (உதாரணமாக, `C:\src\flutter` அல்லது `/Users/your-name/development`) பிரித்தெடுக்கவும் (extract).
+3.  Flutter SDK-ன் `bin` கோப்புறையின் பாதையை (path) உங்கள் கணினியின் `environment variables`-ல் சேர்க்கவும். இதுதான் நீங்கள் எந்த இடத்திலிருந்தும் `flutter` கட்டளையை இயக்க உதவும்.
+4.  உங்கள் குறியீட்டு எடிட்டரில் (VS Code/Android Studio) Flutter மற்றும் Dart நீட்டிப்புகளை (extensions/plugins) நிறுவவும்.
+5.  கட்டளை வரியில் (Command Prompt/Terminal) `flutter doctor` என்ற கட்டளையை இயக்கவும்.
+
+**`flutter doctor`-ன் பங்கு:**
+
+`flutter doctor` என்பது ஒரு கண்டறியும் கருவி (diagnostic tool). இது உங்கள் கணினியில் Flutter-க்குத் தேவையான மென்பொருட்கள் சரியாக நிறுவப்பட்டுள்ளதா, பாதைகள் சரியாக அமைக்கப்பட்டுள்ளதா எனச் சரிபார்த்து ஒரு அறிக்கையைத் தரும். ஏதேனும் சிக்கல்கள் இருந்தால், அதை எப்படிச் சரி செய்வது என்பதற்கான வழிமுறைகளையும் வழங்கும்.
+
+```bash
+# Run this command in your terminal
+flutter doctor
+```
+
+**வெற்றிகரமான `flutter doctor` வெளியீட்டின் ஒரு பகுதி:**
+
+```
+[✓] Flutter (Channel stable, 3.x.x, on Microsoft Windows ...)
+[✓] Android toolchain - develop for Android devices (Android SDK version 33.0.0)
+[✓] Chrome - develop for the web
+[✓] Visual Studio - develop for Windows (Visual Studio Community 2022)
+[✓] Android Studio (version 2022.1)
+[✓] VS Code (version 1.7x.x)
+[✓] Connected device (1 available)
+[✓] HTTP Host Availability
+
+• No issues found!
+```
+
+---
